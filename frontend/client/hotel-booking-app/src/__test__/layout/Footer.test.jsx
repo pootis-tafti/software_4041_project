@@ -7,7 +7,7 @@ describe('Footer Component', () => {
     test('renders current year in copyright notice', () => {
         render(<Footer />)
         const currentYear = new Date().getFullYear()
-        expect(screen.getByText(`© ${currentYear} Hotel Booking App`)).toBeInTheDocument()
+        expect(screen.getByText(`© ${currentYear} by Parsa Sadeghi Tafti`)).toBeInTheDocument()
     })
 
     test('has correct styling classes', () => {

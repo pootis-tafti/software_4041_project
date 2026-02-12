@@ -7,7 +7,7 @@ describe("Parallax Component", () => {
         render(<Parallax />)
 
         const heading = screen.getByText(/Experience the Best hospitality at/i)
-        const hotelName = screen.getByText("Hotel Booking App")
+        const hotelName = screen.getByText("Hotel Tafti")
 
         expect(heading).toBeInTheDocument()
         expect(hotelName).toBeInTheDocument()

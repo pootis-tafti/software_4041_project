@@ -3,7 +3,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,25,27&height=180&section=header&text=Hotel%20Booking%20Application&fontSize=36&fontAlignY=35&animation=twinkling&fontColor=FFFFFF"/>
 </div>
 
-# Hotel Booking Application
+# Hotel Taftilication
 
 A full-stack hotel booking application built with Spring Boot, Spring Security, React.js, and Docker. This application provides a modern and secure platform for hotel reservations and management.
 

@@ -6,7 +6,7 @@ import MainHeader from '../../components/layout/MainHeader'
 describe('MainHeader Component', () => {
     test('renders welcome message with styled hotel name', () => {
         render(<MainHeader />)
-        const hotelName = screen.getByText('Hotel Booking App')
+        const hotelName = screen.getByText('Hotel Tafti')
         expect(hotelName).toHaveClass('hotel-color')
     })
 

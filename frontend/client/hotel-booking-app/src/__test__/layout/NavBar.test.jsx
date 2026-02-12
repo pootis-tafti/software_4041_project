@@ -19,7 +19,7 @@ describe('NavBar Component', () => {
 
     test('renders brand name', () => {
         renderWithRouter()
-        expect(screen.getByText('Hotel Booking App')).toHaveClass('hotel-color')
+        expect(screen.getByText('Hotel Tafti')).toHaveClass('hotel-color')
     })
 
     test('displays browse rooms link', () => {
