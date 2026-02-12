@@ -12,18 +12,19 @@ jobs:
     runs-on: ubuntu-latest
 
     services:
-      sqlserver:
-        image: mcr.microsoft.com/mssql/server:2022-latest
+      mysql:
+        image: mysql:8.0
         env:
-          ACCEPT_EULA: Y
-          SA_PASSWORD: YourStrong!Passw0rd
+          MYSQL_ROOT_PASSWORD: pinhead27
+          MYSQL_DATABASE: hotel_booking_app_db
+          YSQL_ROOT_HOST: "%"
         ports:
-          - 1433:1433
+          - 3306:3306
         options: >-
-          --health-cmd "exit 0"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 10
+          --health-cmd="mysqladmin ping -h localhost -ppinhead27"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
 
     steps:
       - name: Checkout repository
@@ -37,19 +38,6 @@ jobs:
           cache: maven
           cache-dependency-path: backend/pom.xml
 
-      - name: Wait for SQL Server
-        run: |
-          echo "Waiting for SQL Server to be ready..."
-          for i in {1..30}; do
-            /opt/mssql-tools/bin/sqlcmd -S localhost -U root -P "pinhead27" -Q "SELECT 1" && break
-            echo "Waiting 5s..."
-            sleep 5
-          done
-
       - name: Run tests
         run: mvn clean test
         working-directory: backend
-        env:
-          SPRING_DATASOURCE_URL: jdbc:sqlserver://localhost:1433/hotel_booking_app_db
-          SPRING_DATASOURCE_USERNAME: root
-          SPRING_DATASOURCE_PASSWORD: pinhead27
