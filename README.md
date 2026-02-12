@@ -3,7 +3,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,25,27&height=180&section=header&text=Hotel%20Booking%20Application&fontSize=36&fontAlignY=35&animation=twinkling&fontColor=FFFFFF"/>
 </div>
 
-# Hotel Taftilication
+# Hotel Tafti
 
 A full-stack hotel booking application built with Spring Boot, Spring Security, React.js, and Docker. This application provides a modern and secure platform for hotel reservations and management.
 
@@ -11,7 +11,7 @@ A full-stack hotel booking application built with Spring Boot, Spring Security, 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/MuhammadMahdiAmirpour/hotel-booking-app-dockerized.git
+   git clone https://github.com/pootis-tafti/software_4041_project.git
    cd hotel-booking-app-dockerized
    ```
 
@@ -36,7 +36,7 @@ Password: 123456
 - **Java Spring Boot** - Core framework
 - **Spring Security** - Authentication and authorization
 - **Spring Data JPA** - Data persistence
-- **PostgreSQL** - Database
+- **MYSQL** - Database
 
 ### Frontend
 - **React.js** - UI framework
@@ -81,16 +81,10 @@ hotel-booking-app/
 └── README.md
 ```
 
-## 🎓 Acknowledgments
-
-This project was developed following these excellent tutorials:
-- [Spring Boot Hotel Management Project](https://www.youtube.com/watch?v=0XJu4Nnl0Kc)
-- [Full Stack Project with Spring Boot and React](https://www.youtube.com/watch?v=7gZwWSsGIDE)
-
 ## 👨‍💻 Author
 
-**Muhammad Mahdi Amirpour**
-- GitHub: [@MuhammadMahdiAmirpour](https://github.com/MuhammadMahdiAmirpour)
+**parsa sadeghi tafti**
+- GitHub: [@pootis-tafti](https://github.com/pootis-tafti)
 
 ---
 
@@ -102,6 +96,3 @@ This project was developed following these excellent tutorials:
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,25,27&height=100&section=footer"/>
 </div>
-
-
-Would you like any other adjustments to make the README more accurate to your project?
