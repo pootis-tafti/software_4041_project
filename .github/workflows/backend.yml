@@ -11,10 +11,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: backend
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -28,4 +24,4 @@ jobs:
 
       - name: Run tests
         run: mvn clean test
-
+        working-directory: backend
