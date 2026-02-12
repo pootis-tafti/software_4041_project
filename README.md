@@ -22,7 +22,7 @@ A full-stack hotel booking application built with Spring Boot, Spring Security, 
 
 3. **Access the Application**
    - Frontend: `http://localhost:3000`
-   - Backend API: `http://localhost:8080`
+   - Backend API: `http://localhost:5137`
 
 ### Default Admin Credentials
 ```
@@ -85,14 +85,3 @@ hotel-booking-app/
 
 **parsa sadeghi tafti**
 - GitHub: [@pootis-tafti](https://github.com/pootis-tafti)
-
----
-
-<div align="center">
-  <sub>Built with ❤️ by Muhammad Mahdi Amirpour</sub>
-</div>
-
-<!-- Footer -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,25,27&height=100&section=footer"/>
-</div>
